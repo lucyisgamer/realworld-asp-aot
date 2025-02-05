@@ -5,3 +5,7 @@ public struct User {
     public string? bio;
     public string? image;
 }
+
+public struct UserEnvelope {
+    public User user;
+}

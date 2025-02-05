@@ -10,3 +10,11 @@ public struct Article {
     public ulong favoritesCount; // the api docs aren't clear about required integer sizes for these items, so we'll use ulong just to be safe
     public Profile author;
 }
+
+public struct ArticleEnvelope {
+    public Article article;
+}
+
+public struct MultiArticleEnvelope {
+    public List<Article> articles;
+}

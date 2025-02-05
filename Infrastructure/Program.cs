@@ -10,8 +10,7 @@ builder.Services.AddAuthentication().AddJwtBearer();
 
 WebApplication app = builder.Build();
 
-RouteGroupBuilder api = app.MapGroup("/api");
-api.MapPost("/users/login", () => false); // dummied out for now
+
 
 app.Run();
 

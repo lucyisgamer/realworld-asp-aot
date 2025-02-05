@@ -5,3 +5,11 @@ public struct Comment {
     public string body;
     public Profile author;
 }
+
+public struct CommentEnvelope {
+    public Comment comment;
+}
+
+public struct MultiCommentEnvelope {
+    public List<Comment> comments;
+}

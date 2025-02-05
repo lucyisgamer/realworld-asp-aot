@@ -4,3 +4,7 @@ public struct Profile {
     public string? image;
     public bool following;
 }
+
+public struct ProfileEnvelope {
+    public Profile profile;
+}
