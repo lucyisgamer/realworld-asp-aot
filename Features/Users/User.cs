@@ -1,11 +1,12 @@
-public struct User {
-    public string email;
-    public string token;
-    public string username;
-    public string? bio;
-    public string? image;
+public struct User(string email, string token, string username, string bio = "", string image = "") {
+    public string email = email;
+    public string token = token;
+    public string username = username;
+    public string bio = bio;
+    public string image = image;
 }
 
-public struct UserEnvelope {
-    public User user;
+public struct UserEnvelope(User user)
+{
+    public User user = user;
 }

@@ -10,6 +10,7 @@ using System.Text.Json.Serialization;
 [JsonSerializable(typeof(Comment))]
 [JsonSerializable(typeof(CommentEnvelope))]
 [JsonSerializable(typeof(MultiCommentEnvelope))]
+[JsonSerializable(typeof(MultiTagEnvelope))]
 [JsonSerializable(typeof(DateTime))] // not sure if these are needed but they can't hurt
 [JsonSerializable(typeof(string))]
 internal partial class AppJsonSerializerContext : JsonSerializerContext

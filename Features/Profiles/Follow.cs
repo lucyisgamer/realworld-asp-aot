@@ -1,5 +1,5 @@
 public static partial class Profiles {
-    public static async ProfileEnvelope Follow(string username) {
+    public static async ProfileEnvelope Follow(IDbContext context, string username) {
 
     }
 }
